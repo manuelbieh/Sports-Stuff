@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="Schedule.js"></script>
+</head>
+
+<body>
+
+<script>
+var teams = new Array(
+	'Hamburger SV',
+	'Borussia Dortmund',
+	'S04',
+	'Bayern Munich',
+	'Werder Bremen',
+	'VFB Stuttgart',
+	'Hannover 96',
+	'VfL Wolfsburg',
+	'SC Freiburg',
+	'Moenchengladbach',
+	'Bayer 04 Leverkusen',
+	'1. FC Nuremberg',
+	'Eintracht Frankfurt',
+	'TSG 1899 Hoffenheim',
+	'FSV Mainz 05',
+	'1. FC Köln',
+	'1. FC Kaiserslautern',
+	'St Pauli'
+);
+
+s = new Schedule(teams);
+s.getSeasonFixtures();
+console.log(s.matches);
+
+</script>
+
+</body>
+</html>
